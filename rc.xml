@@ -77,7 +77,7 @@
     </font>
     <font place="MenuItem">
       <name>Terminus</name>
-      <size>10</size>
+      <size>9</size>
       <!-- font size in points -->
       <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -166,6 +166,23 @@
   </dock>
 
   <keyboard>
+    <!-- Managing sound with keyboard -->
+    <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute">
+        <execute>amixer set Master 10%+</execute>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute">
+        <execute>amixer set Master 10%-</execute>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioMute">
+      <action name="Execute">
+        <execute>amixer set Master toggle</execute>
+      </action>
+    </keybind>
+    
     <!-- Maximize current window -->
     <keybind key="W-m">
       <action name="ToggleMaximizeFull"/>

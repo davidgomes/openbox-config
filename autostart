@@ -1,5 +1,5 @@
 nitrogen --restore &
 tint2 &
-volumeicon &
 xfce4-power-manager &
 /usr/lib/notification-daemon-1.0/notification-daemon start &
+killall nm-applet &
