@@ -46,7 +46,7 @@
   <theme>
     <name>Simple</name>
     <titleLayout>NLIMC</titleLayout>
-    <keepBorder>no</keepBorder>
+    <keepBorder>yes</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>sans</name>
@@ -183,15 +183,23 @@
       </action>
     </keybind>
     
+    <keybind key="W-f">
+      <action name="ToggleFullscreen"/>
+    </keybind>
+
     <!-- Maximize current window -->
     <keybind key="W-m">
       <action name="ToggleMaximizeFull"/>
     </keybind>
 
+    <keybind key="W-n">
+      <action name="Iconify"/>
+    </keybind>
+
     <!-- dmenu_run for the win -->
     <keybind key="W-r">
       <action name="Execute">
-        <execute>dmenu_run</execute>
+        <execute>dmenu_run -b</execute>
       </action>
     </keybind>
 
@@ -199,6 +207,13 @@
     <keybind key="W-Return">
       <action name="Execute">
         <execute>terminator</execute>
+      </action>
+    </keybind>
+
+    <!-- Open terminal -->
+    <keybind key="W-t">
+      <action name="Execute">
+        <execute>xterm</execute>
       </action>
     </keybind>
 
@@ -674,47 +689,6 @@
       </mousebind>
       <mousebind button="Left" action="Click">
         <action name="Close"/>
-      </mousebind>
-    </context>
-
-    <context name="Desktop">
-      <mousebind button="Up" action="Click">
-        <action name="GoToDesktop">
-          <to>previous</to>
-        </action>
-      </mousebind>
-      <mousebind button="Down" action="Click">
-        <action name="GoToDesktop">
-          <to>next</to>
-        </action>
-      </mousebind>
-      <mousebind button="A-Up" action="Click">
-        <action name="GoToDesktop">
-          <to>previous</to>
-        </action>
-      </mousebind>
-      <mousebind button="A-Down" action="Click">
-        <action name="GoToDesktop">
-          <to>next</to>
-        </action>
-      </mousebind>
-      <mousebind button="C-A-Up" action="Click">
-        <action name="GoToDesktop">
-          <to>previous</to>
-        </action>
-      </mousebind>
-      <mousebind button="C-A-Down" action="Click">
-        <action name="GoToDesktop">
-          <to>next</to>
-        </action>
-      </mousebind>
-      <mousebind button="Left" action="Press">
-        <action name="Focus"/>
-        <action name="Raise"/>
-      </mousebind>
-      <mousebind button="Right" action="Press">
-        <action name="Focus"/>
-        <action name="Raise"/>
       </mousebind>
     </context>
 

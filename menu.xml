@@ -77,6 +77,14 @@
       </startupnotify>
     </action>
   </item>
+  <item label="Pantheon Terminal">
+    <action name="Execute">
+      <command>pantheon-terminal</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
   <item label="Konsole">
     <action name="Execute">
       <command>konsole</command>
@@ -99,9 +107,9 @@
       </startupnotify>
     </action>
   </item>
-  <item label="Firefox">
+  <item label="Aurora">
     <action name="Execute">
-      <command>firefox</command>
+      <command>firefox-aura</command>
       <startupnotify>
         <enabled>yes</enabled>
         <wmclass>Firefox</wmclass>
