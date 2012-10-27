@@ -196,6 +196,13 @@
       <action name="Iconify"/>
     </keybind>
 
+    <!-- xscreensaver -->
+    <keybind key="W-l">
+      <action name="Execute">
+        <execute>xscreensaver-command -lock</execute>
+      </action>
+    </keybind>
+    
     <!-- dmenu_run for the win -->
     <keybind key="W-r">
       <action name="Execute">
