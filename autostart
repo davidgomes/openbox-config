@@ -1,5 +1,6 @@
 nitrogen --restore &
 tint2 &
 xfce4-power-manager &
-/usr/lib/xfce4/notifyd/xfce4-notifyd &
+#/usr/lib/xfce4/notifyd/xfce4-notifyd &
+xcompmgr &
 xscreensaver -nosplash &
